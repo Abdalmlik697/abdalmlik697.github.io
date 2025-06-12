@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أدوات مجانية أونلاين</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🛠️ أدوات مجانية أونلاين</h1>
+        <p>استخدم أدواتنا المجانية بدون تحميل أو تسجيل!</p>
+        <nav>
+            <a href="index.html">الرئيسية</a> |
+            <a href="about.html">من نحن</a> |
+            <a href="privacy.html">سياسة الخصوصية</a> |
+            <a href="contact.html">اتصل بنا</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tool">
+            <h2>🔢 أداة حساب العمر</h2>
+            <input type="date" id="birthdate">
+            <button onclick="calculateAge()">احسب</button>
+            <p id="ageResult"></p>
+        </section>
+
+        <section class="tool">
+            <h2>📁 تحويل النص إلى PDF</h2>
+            <textarea id="textInput" rows="5" placeholder="اكتب النص هنا..."></textarea>
+            <button onclick="downloadPDF()">تحميل PDF</button>
+        </section>
+
+        <section class="tool">
+            <h2>🔗 إنشاء رمز QR</h2>
+            <input type="text" id="qrInput" placeholder="أدخل رابط أو نص">
+            <button onclick="generateQR()">أنشئ QR</button>
+            <div id="qrCode"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 أدوات مجانية أونلاين</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
